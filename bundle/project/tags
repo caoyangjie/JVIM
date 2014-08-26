@@ -1,0 +1,118 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+<2-LeftMouse>	.\plugin\project.vim	/^        nnoremap <buffer> <silent> <2-LeftMouse>   \\|:call <SID>DoFoldOrOpenEntry('', 'e')<CR>$/;"	m
+<2-RightMouse>	.\plugin\project.vim	/^        nmap     <buffer> <silent> <2-RightMouse> <space>$/;"	m
+<3-LeftMouse>	.\plugin\project.vim	/^        nnoremap <buffer> <silent> <3-LeftMouse>  <Nop>$/;"	m
+<3-RightMouse>	.\plugin\project.vim	/^        nmap     <buffer> <silent> <3-RightMouse> <space>$/;"	m
+<4-RightMouse>	.\plugin\project.vim	/^        nmap     <buffer> <silent> <4-RightMouse> <space>$/;"	m
+<C-2-LeftMouse>	.\plugin\project.vim	/^        nmap     <buffer> <silent> <C-2-LeftMouse> <C-Return>$/;"	m
+<C-Down>	.\plugin\project.vim	/^        nnoremap <buffer> <silent> <C-Down> \\|:silent call <SID>MoveDown()<CR>$/;"	m
+<C-LeftMouse>	.\plugin\project.vim	/^        nnoremap <buffer> <silent> <C-LeftMouse>   <LeftMouse>$/;"	m
+<C-Return>	.\plugin\project.vim	/^        nnoremap <buffer> <silent> <C-Return> \\|:call <SID>DoFoldOrOpenEntry('silent! only', 'e')<CR>$/;"	m
+<C-Up>	.\plugin\project.vim	/^        nnoremap <buffer> <silent> <C-Up>   \\|:silent call <SID>MoveUp()<CR>$/;"	m
+<C-W><C-O>	.\plugin\project.vim	/^                nmap <silent> <unique> <C-W><C-O> <C-W>o$/;"	m
+<C-W>o	.\plugin\project.vim	/^                nmap <silent> <unique> <C-W>o <Plug>ProjectOnly$/;"	m
+<C-^>	.\plugin\project.vim	/^        nnoremap <buffer> <silent> <C-^> <Nop>$/;"	m
+<F12>	.\plugin\project.vim	/^        nmap <silent> <F12> <Plug>ToggleProject$/;"	m
+<F1>	.\plugin\project.vim	/^        nnoremap <buffer> <F1> :let g:proj_doinghelp = 1<CR><F1>$/;"	m
+<F5>	.\plugin\project.vim	/^        nnoremap <buffer> <silent>           <F5> :call <SID>RefreshEntriesFromDir(1)<CR>$/;"	m
+<LocalLeader>0	.\plugin\project.vim	/^        nnoremap <buffer>          <LocalLeader>0 \\|:call <SID>ListSpawn("")<CR>$/;"	m
+<LocalLeader><Down>	.\plugin\project.vim	/^        nmap     <buffer> <silent> <LocalLeader><Down> <C-Down>$/;"	m
+<LocalLeader><Up>	.\plugin\project.vim	/^        nmap     <buffer> <silent> <LocalLeader><Up> <C-Up>$/;"	m
+<LocalLeader>C	.\plugin\project.vim	/^        nnoremap <buffer> <silent> <LocalLeader>C :call <SID>CreateEntriesFromDir(1)<CR>$/;"	m
+<LocalLeader>E	.\plugin\project.vim	/^        nnoremap <buffer> <silent> <LocalLeader>E :call <SID>OpenEntry(line('.'), '', 'e', 1)<CR>$/;"	m
+<LocalLeader>F0	.\plugin\project.vim	/^        nnoremap <buffer>          <LocalLeader>F0 \\|:call <SID>ListSpawn("_fold")<CR>$/;"	m
+<LocalLeader>G	.\plugin\project.vim	/^        nnoremap <buffer> <silent> <LocalLeader>G \\|:call <SID>GrepAll(1, line('.'), "")<CR>$/;"	m
+<LocalLeader>I	.\plugin\project.vim	/^        nnoremap <buffer> <silent> <LocalLeader>I :echo Project_GetFname(line('.'))<CR>$/;"	m
+<LocalLeader>L	.\plugin\project.vim	/^        nnoremap <buffer> <silent> <LocalLeader>L \\|:call <SID>LoadAll(1, line('.'))<CR>$/;"	m
+<LocalLeader>R	.\plugin\project.vim	/^        nnoremap <buffer> <silent> <LocalLeader>R :call <SID>RefreshEntriesFromDir(1)<CR>$/;"	m
+<LocalLeader>S	.\plugin\project.vim	/^        nnoremap <buffer> <silent> <LocalLeader>S \\|:call <SID>LoadAllSplit(0, line('.'))<CR>$/;"	m
+<LocalLeader>T	.\plugin\project.vim	/^        nnoremap <buffer> <silent> <LocalLeader>T \\|:call <SID>DoFoldOrOpenEntry('', 'tabe')<CR>$/;"	m
+<LocalLeader>W	.\plugin\project.vim	/^        nnoremap <buffer> <silent> <LocalLeader>W \\|:call <SID>WipeAll(1, line('.'))<CR>$/;"	m
+<LocalLeader>c	.\plugin\project.vim	/^        nnoremap <buffer> <silent> <LocalLeader>c :call <SID>CreateEntriesFromDir(0)<CR>$/;"	m
+<LocalLeader>e	.\plugin\project.vim	/^        nnoremap <buffer> <silent> <LocalLeader>e :call <SID>OpenEntry(line('.'), '', '', 0)<CR>$/;"	m
+<LocalLeader>f0	.\plugin\project.vim	/^        nnoremap <buffer>          <LocalLeader>f0 \\|:call <SID>ListSpawn("_fold")<CR>$/;"	m
+<LocalLeader>g	.\plugin\project.vim	/^        nnoremap <buffer> <silent> <LocalLeader>g \\|:call <SID>GrepAll(0, line('.'), "")<CR>$/;"	m
+<LocalLeader>i	.\plugin\project.vim	/^        nnoremap <buffer> <silent> <LocalLeader>i :echo <SID>RecursivelyConstructDirectives(line('.'))<CR>$/;"	m
+<LocalLeader>l	.\plugin\project.vim	/^        nnoremap <buffer> <silent> <LocalLeader>l \\|:call <SID>LoadAll(0, line('.'))<CR>$/;"	m
+<LocalLeader>o	.\plugin\project.vim	/^        nmap     <buffer> <silent> <LocalLeader>o <C-Return>$/;"	m
+<LocalLeader>r	.\plugin\project.vim	/^        nnoremap <buffer> <silent> <LocalLeader>r :call <SID>RefreshEntriesFromDir(0)<CR>$/;"	m
+<LocalLeader>s	.\plugin\project.vim	/^        nmap     <buffer> <silent> <LocalLeader>s <S-Return>$/;"	m
+<LocalLeader>v	.\plugin\project.vim	/^        nmap     <buffer> <silent> <LocalLeader>v <M-CR>$/;"	m
+<LocalLeader>w	.\plugin\project.vim	/^        nnoremap <buffer> <silent> <LocalLeader>w \\|:call <SID>WipeAll(0, line('.'))<CR>$/;"	m
+<M-2-LeftMouse>	.\plugin\project.vim	/^        nnoremap <buffer> <silent> <M-2-LeftMouse> <M-CR>$/;"	m
+<M-CR>	.\plugin\project.vim	/^        nmap     <buffer> <silent> <M-CR> <Return><C-W>p$/;"	m
+<Plug>ProjectOnly	.\plugin\project.vim	/^        nnoremap <script> <Plug>ProjectOnly :call <SID>DoProjectOnly()<CR>$/;"	m
+<Plug>ToggleProject	.\plugin\project.vim	/^nnoremap <script> <Plug>ToggleProject :call <SID>DoToggleProject()<CR>$/;"	m
+<Return>	.\plugin\project.vim	/^        nnoremap <buffer> <silent> <Return>   \\|:call <SID>DoFoldOrOpenEntry('', 'e')<CR>$/;"	m
+<RightMouse>	.\plugin\project.vim	/^        nmap     <buffer> <silent> <RightMouse>   <space>$/;"	m
+<S-2-LeftMouse>	.\plugin\project.vim	/^        nnoremap <buffer> <silent> <S-2-LeftMouse> \\|:call <SID>DoFoldOrOpenEntry('', 'sp')<CR>$/;"	m
+<S-LeftMouse>	.\plugin\project.vim	/^        nnoremap <buffer> <silent> <S-LeftMouse>   <LeftMouse>$/;"	m
+<S-Return>	.\plugin\project.vim	/^        nnoremap <buffer> <silent> <S-Return> \\|:call <SID>DoFoldOrOpenEntry('', 'sp')<CR>$/;"	m
+<space>	.\plugin\project.vim	/^        nnoremap <buffer> <silent> <space>  \\|:silent exec 'vertical resize '.(match(g:proj_flags, '\\Ct')!=-1 && winwidth('.') > g:proj_window_width?(g:proj_window_width):(winwidth('.') + g:proj_window_increment))<CR>$/;"	m
+ConstructInfo	.\plugin\project.vim	/^    function! s:ConstructInfo(home, c_d, scriptin, scriptout, flags, filter)$/;"	f
+CreateEntriesFromDir	.\plugin\project.vim	/^    function! s:CreateEntriesFromDir(recursive)$/;"	f
+DisplayInfo	.\plugin\project.vim	/^    function! s:DisplayInfo()$/;"	f
+DoEnsurePlacementSize_au	.\plugin\project.vim	/^    function! s:DoEnsurePlacementSize_au()$/;"	f
+DoEntryFromDir	.\plugin\project.vim	/^    function! s:DoEntryFromDir(recursive, line, name, absolute_dir, dir, c_d, filter_directive, filter, foldlev, sort)$/;"	f
+DoFoldOrOpenEntry	.\plugin\project.vim	/^    function! s:DoFoldOrOpenEntry(cmd0, cmd1)$/;"	f
+DoProjectOnly	.\plugin\project.vim	/^        function! s:DoProjectOnly()$/;"	f
+DoSetup	.\plugin\project.vim	/^    function! s:DoSetup()$/;"	f
+DoSetupAndSplit	.\plugin\project.vim	/^    function! s:DoSetupAndSplit()$/;"	f
+DoSetupAndSplit_au	.\plugin\project.vim	/^    function! s:DoSetupAndSplit_au()$/;"	f
+DoToggleProject	.\plugin\project.vim	/^    function! s:DoToggleProject()$/;"	f
+FindFoldBottom	.\plugin\project.vim	/^    function! s:FindFoldBottom(line)$/;"	f
+FindFoldTop	.\plugin\project.vim	/^    function! s:FindFoldTop(line)$/;"	f
+GenerateEntry	.\plugin\project.vim	/^    function! s:GenerateEntry(recursive, line, name, absolute_dir, dir, c_d, filter_directive, filter, foldlev, sort)$/;"	f
+GetCd	.\plugin\project.vim	/^    function! s:GetCd(info, home)$/;"	f
+GetFilter	.\plugin\project.vim	/^    function! s:GetFilter(info, parent_filter)$/;"	f
+GetFlags	.\plugin\project.vim	/^    function! s:GetFlags(info)$/;"	f
+GetHome	.\plugin\project.vim	/^    function! s:GetHome(info, parent_home)$/;"	f
+GetScriptin	.\plugin\project.vim	/^    function! s:GetScriptin(info, home)$/;"	f
+GetScriptout	.\plugin\project.vim	/^    function! s:GetScriptout(info, home)$/;"	f
+GrepAll	.\plugin\project.vim	/^    function! s:GrepAll(recurse, lineno, pattern)$/;"	f
+IsAbsolutePath	.\plugin\project.vim	/^    function! s:IsAbsolutePath(path)$/;"	f
+ListSpawn	.\plugin\project.vim	/^    function! s:ListSpawn(varnamesegment)$/;"	f
+LoadAll	.\plugin\project.vim	/^    function! s:LoadAll(recurse, line)$/;"	f
+LoadAllSplit	.\plugin\project.vim	/^    function! s:LoadAllSplit(recurse, line)$/;"	f
+MoveDown	.\plugin\project.vim	/^    function! s:MoveDown()$/;"	f
+MoveUp	.\plugin\project.vim	/^    function! s:MoveUp()$/;"	f
+OpenEntry	.\plugin\project.vim	/^    function! s:OpenEntry(line, precmd, editcmd, dir)$/;"	f
+OpenEntry2	.\plugin\project.vim	/^    function! s:OpenEntry2(line, infoline, fname, editcmd)$/;"	f
+Project	.\plugin\project.vim	/^    command -nargs=? -complete=file Project call <SID>Project('<args>')$/;"	c
+Project	.\plugin\project.vim	/^function! s:Project(filename) " <<<$/;"	f
+Project_ForEach	.\plugin\project.vim	/^    function! Project_ForEach(recurse, lineno, cmd, data, match)$/;"	f
+Project_ForEachR	.\plugin\project.vim	/^    function! s:Project_ForEachR(recurse, lineno, info, cmd, data, match)$/;"	f
+Project_GetAllFnames	.\plugin\project.vim	/^    function! Project_GetAllFnames(recurse, lineno, separator)$/;"	f
+Project_GetFname	.\plugin\project.vim	/^    function! Project_GetFname(line)$/;"	f
+RecordPrevBuffer_au	.\plugin\project.vim	/^    function! s:RecordPrevBuffer_au()$/;"	f
+RecursivelyConstructDirectives	.\plugin\project.vim	/^    function! s:RecursivelyConstructDirectives(lineno)$/;"	f
+RefreshEntriesFromDir	.\plugin\project.vim	/^    function! s:RefreshEntriesFromDir(recursive)$/;"	f
+SetupAutoCommand	.\plugin\project.vim	/^    function! s:SetupAutoCommand(cwd)$/;"	f
+SetupScriptAutoCommand	.\plugin\project.vim	/^    function! s:SetupScriptAutoCommand(bufcmd, script)$/;"	f
+SortR	.\plugin\project.vim	/^    function! s:SortR(start, end)$/;"	f
+Spawn	.\plugin\project.vim	/^    function! s:Spawn(number)$/;"	f
+SpawnAll	.\plugin\project.vim	/^    function! s:SpawnAll(recurse, number)$/;"	f
+VimDirListing	.\plugin\project.vim	/^    function! s:VimDirListing(filter, padding, separator, filevariable, filecount, dirvariable, dircount)$/;"	f
+WipeAll	.\plugin\project.vim	/^    function! s:WipeAll(recurse, line)$/;"	f
+b:escape_spaces	.\plugin\project.vim	/^                let b:escape_spaces=1$/;"	v
+bufname	.\plugin\project.vim	/^        let bufname=escape(substitute(expand('%:p', 0), '\\\\', '\/', 'g'), ' ')$/;"	v
+c_d	.\plugin\project.vim	/^                let c_d=s:GetCd(info, '')$/;"	v
+command	.\plugin\project.vim	/^                let command=substitute(command, '%F', escape(fnames, '\\'), 'g')$/;"	v
+command	.\plugin\project.vim	/^                let command=substitute(command, '%d', escape(c_d, '\\'), 'g')$/;"	v
+command	.\plugin\project.vim	/^                let command=substitute(command, '%h', escape(home, '\\'), 'g')$/;"	v
+command	.\plugin\project.vim	/^                let command=substitute(command, '%s', escape(fnames, '\\'), 'g')$/;"	v
+command	.\plugin\project.vim	/^                let command=substitute(g:proj_run_fold{a:number}, '%f', substitute(escape(fnames, '\\'), '\\\\ ', ' ', 'g'), 'g')$/;"	v
+fnames	.\plugin\project.vim	/^                let fnames=Project_GetAllFnames(a:recurse, line('.'), ' ')$/;"	v
+g:proj_running	.\plugin\project.vim	/^        let g:proj_running = bufnr(bufname.'\\>')$/;"	v
+help	.\plugin\project.vim	/^        cnoremap <buffer> help let g:proj_doinghelp = 1<CR>:help$/;"	m
+home	.\plugin\project.vim	/^                let home=s:GetHome(info, '')$/;"	v
+info	.\plugin\project.vim	/^                let info=s:RecursivelyConstructDirectives(line('.'))$/;"	v
+k	.\plugin\project.vim	/^            let k=k+1$/;"	v
+k	.\plugin\project.vim	/^        let k=1$/;"	v
+loaded_project	.\plugin\project.vim	/^let loaded_project=1$/;"	v
+retval	.\plugin\project.vim	/^        let retval=b:fnamelist$/;"	v
